@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: red;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            grid-template-rows: auto;
+        }
+        .item {
+            background-color: blue;
+        }
+
+        .item1 {
+            background-color: blueviolet;
+            grid-column: 1 / 3; /* doit commencer à la première colonne et terminer avant la 3ème */
+            grid-row: 1; /* doit être sur la première ligne */
+        }
+        .item2 {
+            background-color: green;
+            grid-column: 3;
+            grid-row: 2;
+        }
+
+        .photo-gallery {
+            display: grid;
+            width: 500px;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: auto;
+            row-gap: 20px;
+            background-color: #FCFCFF;
+            padding: 5;
+        }
+
+        .photo-gallery div {
+            height: 200px;
+            width: 200px;
+            background-image: url('https://picsum.photos/200/200');
+            background-position: center;
+            background-size: contain;
+
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">
+            A
+        </div>
+        <div class="item">
+            B
+        </div>
+        <div class="item">
+            C
+        </div>
+        <div class="item">
+            D
+        </div>
+        <div class="item">
+            E
+        </div>
+        <div class="item">
+            F
+        </div>
+        <div class="item item1">
+            PLACEMENT MANUEL
+        </div>
+        <div class="item item2">
+            PLACEMENT MANUEL 2
+        </div>
+    </div>
+
+    <div class="photo-gallery">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</body>
+</html>

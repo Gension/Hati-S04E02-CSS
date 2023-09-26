@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container {
+            background-color: #FCFCFC;
+            display: grid;
+            grid-template-areas: 
+                "header header header"
+                "sidebar main main"
+                "footer footer footer"
+            ;
+        }
+        #header {
+            height: 200px;
+            grid-area: header;
+            background-color: blue;
+        }
+        #sidebar {
+            height: 600px;
+            grid-area: sidebar;
+            background-color: pink;
+        }
+        #main {
+            grid-area: main;
+            background-color: yellow;
+        }
+        #footer {
+            height: 200px;
+            grid-area: footer;
+            background-color: aquamarine;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header id="header">
+            <div>HEADER</div>
+        </header>
+        <aside id="sidebar">SIDEBAR</aside>
+        <main id="main">
+            <ul>
+                <li>Toto</li>
+                <li>Toto</li>
+                <li>Toto</li>
+                <li>Toto</li>
+            </ul>
+        </main>
+        <footer id="footer">FOOTER</footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,93 @@
+/* Tous les div doivent avoir un fond rouge */
+/* L'element avec l'id toto doit avoir une police en gras */
+
+/* L'élement avec l'id title doit utiliser une police Arial ou sans-serf */
+#name { /* l'élement avec l'id title */
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* si rien devant le nom c'est la balise qui est visée */
+body { /* toutes les balises body de mon document */
+    background-color: #F0F6F6;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 { /* toutes les balises h1 de mon document */
+    font-size: 56px;
+    color: #084B83;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    width: 900px;
+    margin-bottom: 20px;
+}
+
+main {
+    margin-top: 20px;
+    /*      V  H  */
+    margin: 0 auto;
+    width: 900px;
+    display: flex;
+    background-color: #BBE6E4;
+
+    /*              TL  TR  BR  BL */
+    /* border-radius: 20px 0px 0px 20px; */
+    border-radius: 20px;
+    padding: 15px;
+}
+
+section {
+    flex: 1;
+    margin-right: 20px;
+}
+
+aside {
+    width: 250px;
+    border-radius: 20px;
+    padding: 15px;
+    background-color: #FFF;
+}
+
+.articles {
+    display: flex;
+    flex-direction: column;
+}
+
+.articles-asc {
+    flex-direction: column-reverse;
+}
+
+article {
+    border-radius: 20px;
+    background-color: #FFF;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+article h3 {
+    font-size: 24px;
+    color: #084B83;
+}
+
+article h4 {
+    color:#FF66B3;
+}
+
+#photo-de-profile {
+    height: 180px;
+    border-radius: 50%;
+}
+
+.title-info {
+    margin-left: 20px;
+}
+.competences progress {
+    width: 100%;
+}

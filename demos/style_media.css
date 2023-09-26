@@ -1,0 +1,145 @@
+:root {
+    --primary-color: #ff006e;
+    --primary-color-light: #FF2A86;
+    --primary-color-lighter: #FF559E;
+    --primary-color-lightest: #FFD5E7;
+
+    --base-background : #FFF1F7;
+
+    --secondary-color: #3a86ff;
+
+    --font-size-xs: 8px;
+    --font-size-sm: 12px;
+    --font-size-md: 16px;
+    --font-size-lg: 20px;
+    --font-size-xl: 30px;
+    --font-size-2xl: 54px;
+
+
+    --spacing-1 : .25em;
+    --spacing-2 : .5em;
+    --spacing-3 : .75em;
+    --spacing-4 : 1em;
+
+}
+
+html, body {
+    background-color: var(--base-background);
+    font-size: var(--font-size-md);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+h1 {
+    font-size: var(--font-size-2xl);
+}
+
+.container {
+    background-color: #FCFCFC;
+    display: grid;
+    row-gap: var(--spacing-2);
+    column-gap: var(--spacing-2);
+    grid-template-areas: 
+        "header header header"
+        "sidebar main main"
+        "footer footer footer"
+    ;
+}
+#header {
+    height: 200px;
+    grid-area: header;
+    background-color: var(--primary-color-lightest);
+}
+#sidebar {
+    height: 600px;
+    grid-area: sidebar;
+    background-color: var(--secondary-color);
+}
+#main {
+    padding: var(--spacing-3);
+    grid-area: main;
+    background-color: var(--base-background);
+}
+#footer {
+    height: 200px;
+    grid-area: footer;
+    background-color: var(--primary-color-lightest);
+}
+
+#menu li {
+    font-size: 1.3em;
+    font-weight: bold;
+    margin-bottom: 1em;
+
+}
+
+#menu li:hover {
+    background-color: var(--primary-color);
+}
+
+#hamburger_menu {
+    display: none;
+}
+/* MOBILE */
+@media (max-width:600px) {
+    body {
+        background-color: #F0F;
+        font-size: 2em;
+    }
+    
+    .container {
+        background-color: #FCFCFC;
+        display: grid;
+        grid-template-areas: 
+            "header"
+            "sidebar"
+            "main"
+            "footer"
+        ;
+    }
+    
+    #sidebar {
+        height: 2em;
+    }
+
+    #menu {
+        display: none;
+    }
+
+    #hamburger_menu {
+        display: block;
+    }
+}
+/* TABLET */
+@media (min-width: 601px) and (max-width: 1024px)
+{
+    body {
+        background-color: #AAAA00;
+    }
+    .container {
+        background-color: blueviolet;
+    }
+    
+}
+/* DESKTOP */
+@media (min-width: 1025px) {
+    body {
+        background-color: yellow;
+    }
+}
+/* 
+@media (max-width:1024px) {
+    body {
+        background-color: yellow;
+        
+    }
+
+    .container {
+        background-color: blueviolet;
+    }
+}
+/* Le comportement à adopter tant que le viewport est inferieur à 600px 
+@media (max-width:600px) {
+    body {
+        background-color: #F0F;
+    }
+} */
